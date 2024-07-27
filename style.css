@@ -41,9 +41,7 @@
     border: 5px solid #585858;
     border-radius: 20px;
     padding: 30px;
-    margin-left: 620px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
     position: relative;
 }
 .contact-frame {
@@ -52,9 +50,8 @@
     border: 5px solid #585858;
     border-radius: 20px;
     padding: 30px;
-    margin-left: 620px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+    margin-top: 30px;
     position: relative;
 }
 body {
@@ -62,7 +59,14 @@ body {
     background-image: url('back.png');
     background-repeat: no-repeat;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
+
+    
 
 #link {
     color: rgb(114, 150, 255);
