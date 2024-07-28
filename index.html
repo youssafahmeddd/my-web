@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head >
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Image Popup</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-        
+        <div class="box">
+            <li class="box1"><a id="box1"href="#frame-box">Home</a></li>
+            <li class="box2"><a id="box2"href="#frame-box3">Contact us</a></li>
+        </div>
     </head>
     <body>
-        <div class="container">
+
             <div class="popup">
                 <!-- top bar -->
                 <div class="top-bar">
@@ -20,30 +23,25 @@
                 <button class="arrow-btn left-arrow"><img src="img/arrow.png" alt=""></button>
                 <button class="arrow-btn right-arrow"><img src="img/arrow.png" alt=""></button>
                 <!-- image -->
-                <img src="img/certificate 1.png" class="large-image" alt="certificate_1">
+                <img src="certificate 1.png" class="large-image" alt="certificate 1">
                 <!-- image-index -->
                 <h1 class="index">01</h1>
             </div>
-            <div class="frame">
-            <h2 id="home">Personal information</h2> <!--عنوان رئيسي-->
-            <p> 
+            <div class="frame-box" id="frame-box">
+            <p class="frame-info">
+                <h2>Personal information</h2> <!--عنوان رئيسي-->
                 <img class="me" src="https://scontent.faly8-2.fna.fbcdn.net/v/t39.30808-6/438086138_2245887158947922_5544259196909247315_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Htx-TvVW_nAQ7kNvgGRmAzH&_nc_ht=scontent.faly8-2.fna&oh=00_AYDr4oD2mDshgtQVinB5mco8MfNqRH-TLZ1_RMIs-NlUnA&oe=66AB32AE" height="200" width="200">
                 <br><br><b>Name: </b>Mahmoud Alaa Eldin Aziz Muhammed
                 <br><b>Education: </b>Faculty of Science
                 <br><b>Departement: </b>Microbiology
                 <br><b>Academic year: </b> 3rd year
                 <br><b>Age: </b>20
-                
             
-                
-                
             </p>
             </div>
-
-        
-            <div class="frame">
+            <div class="frame-box2">
+            <p class="frame-info2">
             <h2 id="titles">Experiments</h2> <!--عنوان رئيسي-->
-            <p> 
                 <br><b>حاصل على شهادة في دورة التحاليل الطبية
                     <br>python حاصل على شهادة في دورة
                     <br>html حاصل على شهادة في دورة
@@ -51,15 +49,15 @@
                     <br><br>
                     
                     <!----><div class="gallery-image">
-                            <img class="image" src="img/certificate 1.png" height="114" width="114" alt="certificate 1">
-                            <img class="image" src="img/certificate 2.png" height="114" width="114" alt="certificate 2">
-                            <img class="image" src="img/certificate 3.png" height="114" width="114" alt="certificate 3">
-                        </div>
+                            <img class="image" src="certificate 1.png" height="114" width="114" alt="certificate 1">
+                            <img class="image" src="certificate 2.png" height="114" width="114" alt="certificate 2">
+                            <img class="image" src="certificate 3.png" height="114" width="114" alt="certificate 3">
                     <script src="script.js"></script>
+                    </div>
                 </b>
                 
                 <hr> <!-- خط خفيف -->
-                <h2 id="titles">Goals</h2> <!--عنوان فرعي-->
+                <h2>Goals</h2> <!--عنوان فرعي-->
                 <h4>Main Job</h4>
                 <b>العمل في مجال التحاليل ( اخصائي تحاليل طبية )
                     <br>العمل في مجال طبي ( مراقب جودة )
@@ -72,13 +70,15 @@
                 </b>
             </p> 
             </div>
-            <div class="contact-frame">
-                <h2>Contact me<h2>
+            <div class="frame-box3" id="frame-box3">
+                <h2 class="frame-info3">Contact me<h2>
                 <a href="https://www.facebook.com/xx2mmdd" class="fa fa-facebook" target="_blank"></a> <a class="fa fa-whatsapp my-whatsApp"href="https://wa.me//+201011676950" class="whatsApp" target="_blank"></a> <a class="fa fa-google" href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdnRKmGrgqtBHNnLKwFsFpPCcVcjghCMSHBRrvHgrPZGJVnsZpjkQcbprbBCCKdStGfKqqMpFBbXQLfvScpTQpSDSCGkgjLMgbDfBcSmhgqXwKvq"></a>
             </div>
-            <audio controls>
+            <div class="quran">
+            <audio controls autoplay id="quran">
                 <source src="67 الملك.mp3" type="audio/mp3">
             </audio>
-    </div>
+            </div>
+
     </body>
 </html>
