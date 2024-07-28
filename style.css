@@ -1,19 +1,62 @@
-#banner {
-    color: rgb(114, 150, 255);
+
+.box {
+    top: 0%;
+    left: 0%; 
+    background-color: rgba(128, 183, 255, 0.038);
+    border: 5px solid rgba(0, 0, 0, 0.197);
+    height: 50px;
+    position: sticky;
+    color: rgb(255, 255, 255);
+    
 }
-#banner:hover {
-    color: rgb(179, 209, 255);
+#box1 {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    font-weight: 50px;
 }
-#img {
-    border-style: solid;
-    border-radius: 100px;
-    color: #585858;
+#box2 {
+    transition: 0.5s;
+    font-weight: 50px;
+    color: rgb(255, 255, 255);
 }
-#img:hover {
-    color: rgb(222, 222, 222);
+#box1:hover {
+    font-size: 25px;
+    transition: 0.5s;
+    font-weight: 50px;
+    color: rgb(255, 255, 255);
+}
+#box2:hover {
+    font-size: 25px;
+    transition: 0.5s;
+    font-weight: 50px;
+    color: rgb(255, 255, 255);
+}
+.box-info {
+    line-height: 6px;
+    position: absolute;
+    left: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
+}
+.box-info2 {
+    line-height: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
+}
+.box-info3 {
+    line-height: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
 }
 .me {
     border-radius: 40px;
+    color: black;
+    transition: 1s;
+    border: solid;
+}
+.me:hover {
+    color: aliceblue;
+    transition: 1s;
+    height: 415px;
+    width: 415px;
+    border: solid;
 }
 .fa {
     color: rgb(255, 255, 255);
@@ -27,49 +70,63 @@
 }
 
 /* Add a hover effect if you want */
-
-.col{
-    position: fixed;
-    color: white;
-    background-color: #585858;
-    top: 0px;
-    left: 0px;
-}
-.frame {
-    position: fixed;
-    width: 500px;
-    border: 5px solid #585858;
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 30px;
-    position: relative;
-}
-.contact-frame {
-    position: fixed;
-    width: 500px;
-    border: 5px solid #585858;
-    border-radius: 20px;
+.quran {
+     /* Semi-transparent background */
     padding: 30px;
 
-    margin-top: 30px;
-    margin-bottom: 30px;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
     position: relative;
+    top: 80px;
+    left: 600px;
+}
+.frame-box {
+    background-color: rgba(128, 183, 255, 0.038);
+    padding: 30px;
+    border: 5px solid #5858581e;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.833); /* Add some shadow for depth */
+    position: relative;
+    left: 600px;
+}
+.frame-box2 {
+    background-color: rgba(128, 183, 255, 0.038);
+    padding: 30px;
+    border: 5px solid #5858581e;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.833); /* Add some shadow for depth */
+    position: relative;
+    left: 600px;
+}
+.frame-box3 {
+    background-color: rgba(128, 183, 255, 0.038);
+    padding: 30px;
+    border: 5px solid #5858581e;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.833); /* Add some shadow for depth */
+    position: relative;
+    top: 60px;
+    left: 600px;
 }
 body {
     color: white;
     background-image: url('back.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover; /* Ensures the background image covers the whole viewport */
-    text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-size: cover; /* Ensures the background image covers the whole viewport */
+    height: 100vh;
     font-family: Arial, sans-serif;
 }
-
-    
-
 #link {
     color: rgb(114, 150, 255);
 }
@@ -79,6 +136,7 @@ body {
 
 
 .gallery{
+    
     width: 80%;
     height: 90vh;
     max-width: 1920px;
@@ -90,7 +148,6 @@ body {
 }
 
 .gallery-image{
-
     min-width: 114px;
     min-height: 114px;
     margin: 10px;
@@ -148,6 +205,7 @@ body {
 }
 
 .top-bar{
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -155,7 +213,6 @@ body {
     height: 50px;
     background: #000;
     color: #fff;
-    text-align: center;
     line-height: 50px;
     font-weight: 300;
 }
@@ -217,4 +274,8 @@ body {
     height: 80%;
     object-fit: contain;
     opacity: 0;
+}
+#quran {
+    text-align: center;
+    align-items: center;
 }
