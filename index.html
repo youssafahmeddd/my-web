@@ -2,75 +2,72 @@
 <html>
 
 <head>
-    <title>Home</title> <!--اسم الصفحة-->
+    <title>Home</title> <!-- اسم الصفحة -->
 </head>
 
-<body dir ="ltr">
-    <h2>Personal information</h2> <!--عنوان رئيسي-->
-   <h2>
+<body dir="rtl"> <!-- تعديل الاتجاه للكتابة من اليمين إلى اليسار -->
+    <h2>معلومات شخصية</h2>
     <img src="11.jpeg" height="150" width="150">
-   
-   </h2>
-    <p> <!--وصف-->
-       </h3> <b>Name: </b>Youssaf Ahmed Abd Elbaset
-        <br><b>Age: </b>20
-        <br><b>Academic year :</b> 3<sup>rd</sup> year <!--رفع الكلمة عن مستوى السطر-->
-        <br><b>Work time :</b> from 12:00<sub>pm</sub> to 6:00<sub>pm</sub> <!--إنزال الكلمة عن مستوى السطر-->
-        <br><b>Departement: </b><i>Chemistry & physical</i> <!--خط مائل-->
-        <br><b>E-mail: </b><u>youssafa326@gmail.com</u> <!--خط تحت النص-->
-        <hr> <!-- خط خفيف -->
-    </p> 
-    <h2>Experiments</h2> <!--عنوان فرعي-->
-    <img src="certificate.png" height="500" width="500" >
-     <img src="certificate 2.png" height="500" width="500" >
+    <p> <!-- بداية الفقرة -->
+        <b>الاسم: </b>Youssaf Ahmed Abd Elbaset
+        <br><b>العمر: </b>20
+        <br><b>السنة الدراسية: </b>السنة الثالثة <!-- استخدام sup لرفع النص -->
+        <br><b>وقت العمل: </b>من الساعة 12:00 ظهرًا إلى الساعة 6:00 مساءً <!-- استخدام sub لإنزال النص -->
+        <br><b>القسم: </b><i>الكيمياء والفيزياء</i>
+        <br><b>البريد الإلكتروني: </b><u>youssafa326@gmail.com</u>
+        <hr> <!-- خط أفقي -->
+    </p> <!-- نهاية الفقرة -->
 
-    
+    <h2>التجارب</h2>
+    <img src="certificate.png" height="500" width="500">
+    <img src="certificate 2.png" height="500" width="500">
 
-    <ol type="A"> <!--قائمة مرتبة بالاحرف او الارقام في الصفحة-->
+    <ol type="A"> <!-- قائمة مرتبة بالأحرف -->
         <li>حاصل على شهادة في دورة التحاليل الطبية</li>
-        <li>python حاصل على شهادة في دورة </li>
-        <li>html حاصل على شهادة في دورة </li>
-        <li>css حاصل على شهادة في دورة </li>
+        <li>حاصل على شهادة في دورة Python</li>
+        <li>حاصل على شهادة في دورة HTML</li>
+        <li>حاصل على شهادة في دورة CSS</li>
     </ol>
-    <hr> <!-- خط خفيف -->
-    <h2>Goals</h2> <!--عنوان فرعي-->
-    <ul> <!--قائمة مرتبة بالنقاط في الصفحة-->
-    <h4>Main Job</h4>
-        <li>العمل في مجال التحاليل ( اخصائي تحاليل طبية )</li>
-        <li>العمل في مجال طبي ( مراقب جودة )</li>
-        <li>العمل في مجال الادوية ( تصنيع الادوية )</li>
-    <h4>Freelance</h4>
-        <li>العمل في مجال التكنولوجيا ( برمجة المواقع والتطبيقات )</li>
-        <li>كتابة ابحاث ومقالات</li>
+    <hr> <!-- خط أفقي -->
+
+    <h2>الأهداف</h2>
+    <ul> <!-- قائمة غير مرتبة -->
+        <h4>العمل الرئيسي</h4>
+        <li>العمل في مجال التحاليل (اخصائي تحاليل طبية)</li>
+        <li>العمل في مجال طبي (مراقب جودة)</li>
+        <li>العمل في مجال الأدوية (تصنيع الأدوية)</li>
+        <h4>العمل الحر</h4>
+        <li>العمل في مجال التكنولوجيا (برمجة المواقع والتطبيقات)</li>
+        <li>كتابة أبحاث ومقالات</li>
     </ul>
-    <hr> <!-- خط خفيف -->
+    <hr> <!-- خط أفقي -->
+
     <form>
-        <label for="phone">رقم التلفون</label>
-        <input type="text" id="phone"
-        <hr>
+        <label for="phone">رقم التليفون</label>
+        <input type="text" id="phone">
+        <hr> <!-- خط أفقي -->
         <p>الجنس:</p>
         <input type="radio" id="male" name="gender">
-        <label for="male"> ذكر</label>
+        <label for="male">ذكر</label>
         <input type="radio" id="female" name="gender">
-        <label for="female"> انثي</label>
-        <p>مين اي بلد؟</p>
+        <label for="female">أنثى</label>
+        <p>من أي بلد؟</p>
         <input type="checkbox" id="Egypt" name="Egypt">
         <label for="Egypt">مصر</label>
-        <input type="checkbox" id="another country" name="another country"
-    <label for="another country">بلد اخري</label>
+        <input type="checkbox" id="another-country" name="another-country">
+        <label for="another-country">بلد آخر</label>
 
-   <h2>
-    <input type="submit" value="دخول "
-   </h2> 
+        <h2>
+            <input type="submit" value="دخول">
+        </h2>
     </form>
 
+    <style>
+        body {
+            background-color: rgb(174, 174, 221);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </body>
-<style>
-    body {background-color: rgb(174, 174, 221);
-    font-family: Arial, Helvetica, sans-serif;
 
-    }
-    
-    
-</style>
 </html>
